@@ -1,0 +1,541 @@
+html, body {
+  background-color: #e0e0e0;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,
+nav {
+  font-family: 'Abril Fatface', cursive;
+}
+
+p,
+a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-color: #a9c6e2;
+}
+
+.hc-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #a9c6e2 !important;
+}
+
+.menu2x {
+  padding: .75rem;
+  margin: .25rem;
+  display: none;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu2x div {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  margin: 5px 0px;
+  background-color: white;
+}
+
+nav {
+  padding: .2rem .2rem 0rem .2rem;
+}
+
+nav a {
+  font-family: 'Abril Fatface', cursive;
+  display: inline-block !important;
+  font-size: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  border-right: 1px solid #8080806e;
+  cursor: pointer;
+  transition: .3s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid;
+  text-decoration: none;
+}
+
+.on {
+  border-bottom: 2px solid;
+}
+
+.nav-header {
+  display: none;
+}
+
+.small-logo-contain {
+  display: inline-block;
+}
+
+.small-logo-contain a {
+  border-bottom: none;
+}
+
+.x-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.x1, .x2 {
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin: 5px 0px;
+  background-color: white;
+}
+
+.x1 {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.x2 {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+.home {
+  color: #ea9800 !important;
+}
+
+.categories {
+  color: #c100c1 !important;
+}
+
+.archive {
+  color: #00af00 !important;
+}
+
+.about {
+  color: #d20000 !important;
+}
+
+.logo-container {
+  display: inline-block;
+  padding: .15rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+
+  .menu2x {
+    display: inline-block;
+  }
+
+  nav {
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 0px;
+    margin-left: -50px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    background: #e0e0e0;
+    border-right: 2px solid red;
+    transition: .5s;
+  }
+
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  nav a {
+    border-bottom: 1px solid #8080806e;
+    border-right: none;
+  }
+
+  .logo-container img {
+    width: 200px;
+  }
+
+}
+
+/*----------*/
+
+/*Index*/
+
+.new-story-jumbo {
+  padding-top: 2rem;
+}
+
+.jumbotron {
+  background: url("https://s3.envato.com/files/230889973/Preview.jpg");
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.jumbotron a {
+ color: white;
+}
+
+.jumbotron a:hover {
+text-decoration-color: white;
+}
+
+.jumbotron p {
+  font-size: 1.35rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-container-index {
+  flex-wrap: nowrap;
+}
+
+.card {
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.col-md-6 {
+  max-width: 48% !important;
+}
+
+.card a {
+  color: #212529;
+}
+
+
+.card a:hover {
+  text-decoration-color: #212529;
+}
+
+.card h1 {
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: .8rem;
+}
+
+.inner {
+  margin-left: .5rem;
+}
+
+.title {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-sub {
+  width: 350px;
+  height: 180px;
+  margin: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px #00000087;
+}
+
+.tech {
+  background: url("http://www.youthincmag.com/wp-content/uploads/2018/01/technology.jpg");
+  background-size: cover;
+}
+
+.layer-tech {
+  background: #0000ff6e;
+  position: absolute;
+  width: 350px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.business {
+  background: url("https://s3.amazonaws.com/influencive.com/wp-content/uploads/2016/11/08185308/Depositphotos_22928632_m-2015.jpg");
+  background-size: cover;
+}
+
+.layer-business {
+  background: #ff00006e;
+  position: absolute;
+  width: 350px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.pop {
+  background: url("http://uoit-educ5199g.weebly.com/uploads/5/1/5/3/51539655/6770367_orig.png");
+  background-size: cover;
+}
+
+.layer-pop {
+  background: #00ff399c;
+  position: absolute;
+  width: 350px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.news {
+  background: url("https://s3-us-west-2.amazonaws.com/internationalwomensday/home/iwd-news.png");
+  background-size: cover;
+}
+
+.layer-news {
+  background: #00fdff6e;
+  position: absolute;
+  width: 350px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.politics {
+  background: url("https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/political_protest_illustration.jpg?itok=ZDJV-J8V");
+  background-size: cover;
+}
+
+.layer-politics {
+  background: #ffb2006e;
+  position: absolute;
+  width: 350px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.category h1 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 2rem 1rem;
+  color: white;
+  z-index: 2;
+  position: relative;
+  text-shadow: 1px 1px 1px black;
+  transition: .3s;
+}
+
+.category h1:hover {
+  transform: scale(1.1);
+}
+
+.list {
+  list-style: none;
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.list a:hover {
+  text-decoration-color: #212529;
+}
+
+.list li {
+  display: block;
+  padding: .5rem;
+  color: #212529;
+  text-decoration-color: #212529;
+}
+
+.list p {
+  margin-bottom: 0;
+  color: #212529;
+}
+
+.va-archive {
+  padding-left: .5rem;
+}
+
+.va-archive:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 440px) {
+
+  .category-sub {
+    width: 230px;
+    height: 180px;
+  }
+
+  .layer-tech {
+    width: 230px;
+  }
+
+  .layer-business {
+    width: 230px;
+  }
+
+  .layer-pop {
+    width: 230px;
+  }
+
+  .layer-news {
+    width: 230px;
+  }
+
+  .layer-politics {
+    width: 230px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .card-container {
+    display: block;
+  }
+
+  .card h1 {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .layer-tech {
+    width: 296px;
+  }
+
+  .layer-business {
+    width: 296px;
+  }
+
+  .layer-pop {
+    width: 296px;
+  }
+
+  .layer-news {
+    width: 296px;
+  }
+
+  .layer-politics {
+    width: 296px;
+  }
+
+}
+
+/*------*/
+
+/*Categories*/
+
+.category-page {
+  padding-bottom: 1rem;
+}
+
+.card-container-focus {
+  padding: 1rem;
+}
+
+/*-----*/
+
+/*Archives*/
+
+.archive-title {
+  padding: 1rem 1rem 0rem 1rem;
+  margin-bottom: 0rem;
+}
+
+/*-----*/
+
+/*About*/
+
+.container {
+  background: #ffffffcc;
+}
+
+.aboutContent h1 {
+  padding-top: 1rem;
+}
+
+.back {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.back a {
+  color: #212529;
+}
+
+.back a:hover {
+  text-decoration: none;
+}
+
+.back p {
+  display: inline-block;
+}
+
+/*------*/
+
+/*Individual story*/
+
+.individual-story {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.individual-story p {
+  margin-bottom: .25rem;
+}
+
+.back-btn {
+  padding-bottom: .25rem;
+}
+
+.back-btn a {
+  color: #212529;
+}
+
+.back-btn a:hover {
+  color: #212529;
+}
+
+.back-btn p {
+  display: inline;
+}
+
+/*-----*/
+
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9c6e2;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+
+footer p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
