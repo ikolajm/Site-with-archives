@@ -164,6 +164,13 @@ if (isset($_GET['category'])) {
               <p>Back to Categories</p>
               </a>
             </div>
+            <footer>
+              <p>&copy;Fake Website 2011-";
+              echo date('Y');
+              echo "</p>
+            </footer>
+            </div>
+            </div>
           </div>"; //Close containers
 
 } else {
